@@ -3,15 +3,15 @@ import math
 import os
 
 def process():
-  data = readFile('input')
+  data = read_file('input')
   for i, value in enumerate(data):
-    for j, addValue in enumerate(data[i+1:]):
-      for addValue2 in data[j+1:]:
-        if value + addValue+ addValue2 == 2020:
-          print(f'{value} * {addValue} * {addValue2} = {value * addValue * addValue2}')
+    for j, add_value in enumerate(data[i+1:]):
+      for add_value2 in data[j+1:]:
+        if value + add_value+ add_value2 == 2020:
+          print(f'{value} * {add_value} * {add_value2} = {value * add_value * add_value2}')
           return
 
-def readFile(file):
+def read_file(file):
   lines = []
   f = open(os.path.join(os.path.dirname(os.path.realpath(__file__)), file), 'r')
   for line in f.readlines():
