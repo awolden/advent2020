@@ -40,7 +40,3 @@ def read_file(file):
   return lines
 if __name__ == "__main__":
   process()
-
-
-727923200
-727923200
