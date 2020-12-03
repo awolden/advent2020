@@ -1,4 +1,4 @@
-# https://adventofcode.com/2020/day/1
+# https://adventofcode.com/2020/day/3
 import os
 import operator
 import functools
