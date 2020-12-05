@@ -23,7 +23,6 @@ def part_one(data):
     seat_id = get_seat_id(boarding_pass)
     if seat_id > highest_seat:
       highest_seat = seat_id
-
   print(highest_seat)
 
 def get_seat_id(boarding_pass):
