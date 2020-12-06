@@ -26,9 +26,8 @@ def part_two(groups):
   print(f'total: {total}')
 
 def read_file(file):
-  lines = []
   f = open(os.path.join(os.path.dirname(os.path.realpath(__file__)), file), 'r')
-  groups = f.read().split('\n\n')
-  return [ group.split('\n') for group in groups]
+  return [ group.split('\n') for group in f.read().split('\n\n')]
+
 if __name__ == "__main__":
   process()
