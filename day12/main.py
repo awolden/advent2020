@@ -6,14 +6,14 @@ DIRECTIONS = ['W','N','E','S']
 
 def process():
   instructions = read_file('input')
-  # part_one_result = part_one(instructions)
-  # print(part_one_result)
-  # print(f'{abs(part_one_result[0]) + abs(part_one_result[1])}')
+  part_one_result = part_one(instructions)
+  print(part_one_result)
+  print(f'part one: {abs(part_one_result[0]) + abs(part_one_result[1])}')
 
 
   part_two_result = part_two(instructions)
   print(part_two_result)
-  print(f'{abs(part_two_result[0]) + abs(part_two_result[1])}')
+  print(f'part two: {abs(part_two_result[0]) + abs(part_two_result[1])}')
 
 
 def part_one(instructions):
